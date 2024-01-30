@@ -1,3 +1,5 @@
 FROM python:alpine
 WORKDIR /app
-RUN pip install flask && python main.py
+COPY . /app
+RUN rm /app/Dockerfile
+RUN pip3 install flask && python main.py
