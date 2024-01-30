@@ -3,7 +3,7 @@ import os
 import subprocess
 from functools import wraps
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 
 
@@ -33,4 +33,4 @@ def admin():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0', port=8089)
