@@ -29,7 +29,7 @@ def proxy(url):
 @local_only
 def admin():
     if request.method == 'GET':
-        return '<h1>ICED{R4HHHHH_Y0U_C_m3_!_}</h1>'
+        return '<h1>why are u here?</h1>'
 
 
 if __name__ == '__main__':
