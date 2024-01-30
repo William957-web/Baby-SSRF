@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  requestor:
+    image: python:alpine
+    volumes:
+      - ./:/app
+    working_dir: /app
+    restart: always
+    command: sh -c 'pip install flask && python main.py'
+    ports:
+      - "120:1004"
+    
